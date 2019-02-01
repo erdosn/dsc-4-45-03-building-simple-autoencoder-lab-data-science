@@ -34,6 +34,11 @@ from IPython.display import Image
 import matplotlib.pyplot as plt
 ```
 
+    /anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+      from ._conv import register_converters as _register_converters
+    Using TensorFlow backend.
+
+
 ## The Fashion-MNIST dataset
 
 We have already seen the popular MNIST dataset in our previous lessons. Let's load the very similar ["fashion-mnist" dataset](https://github.com/zalandoresearch/fashion-mnist). 
@@ -60,6 +65,16 @@ x_train = x_train.astype('float32') / max_value
 x_test = x_test.astype('float32') / max_value
 x_train.shape, x_test.shape
 ```
+
+    Downloading data from http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz
+    32768/29515 [=================================] - 0s 4us/step
+    Downloading data from http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz
+    26427392/26421880 [==============================] - 4s 0us/step
+    Downloading data from http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz
+    8192/5148 [===============================================] - 0s 0us/step
+    Downloading data from http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz
+    4423680/4422102 [==============================] - 1s 0us/step
+
 
 
 
